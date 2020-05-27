@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'minha-aplicacao';
+  title = 'Bom dia!';
+  
+  outraPalavra = 'Gato';
+
+  constructor(){
+
+    
+  }
+
+  eventoRecebido($event){
+    console.log('AppComponent: EVENTO RECEBIDO', $event);
+  }
 }
+

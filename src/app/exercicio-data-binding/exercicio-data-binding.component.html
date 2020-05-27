@@ -1,0 +1,31 @@
+Valor do contador: {{valorContador}}
+
+<!-- Exercicio contador -->
+<app-contador
+    [(valor)] = "valorContador"
+></app-contador><br><br>
+
+<hr>
+
+<!-- Exemplos Event Binding -->
+
+<button (click)="onClickBotaoEmissor($event)">
+    Emitir informação de clique
+</button><br><br>
+<button (click)="onClick($event)">
+    Clique em mim
+</button><br><br>
+<input type="text" [value]="valorDoInput" (keyup)="digitouAlgo($event)">
+Valor do input: {{ valorDoInput }}
+
+<hr>
+
+<!-- Exemplos Property Binding -->
+<p>Palavra: {{ palavra }}</p><br>
+<input type="text" [value]="initialValue"><br>
+<button [disabled]="isDisabled">Clique aqui!</button><br>
+<p [attr.aria-label]="isDisabled ? 'Botão desabilitado' : accessibilityText">
+    Um texto qualquer...
+</p><br>
+<img [src]="imageURL">
+
