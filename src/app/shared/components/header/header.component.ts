@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   
   constructor() { 
     setTimeout(() => {
-      this.title = 'Título mudado depois de 3s';
+      this.title = 'Seja bem-vindo(a)!';
       console.log('Passa aqui depois de 3s');
     }, 3000);
   }
